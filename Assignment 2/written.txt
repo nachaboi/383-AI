@@ -1,0 +1,42 @@
+Key: (Games 1st Heuristic Lost, Games 2nd Heuristic Lost)
+
+**Our heuristic vs. Your heuristic 1**
+-Depth 1: 50 Tests
+-(3, 4), (1, 7), (4, 3), (0, 4), (1, 3)
+
+-Depth 2: 3 Tests
+-(0, 0), (1, 0), (0, 0), (0, 0), (0, 0), (0, 1), (0, 0)
+
+-Depth 3: 1 Test
+-(0, 0)
+
+-Although it is hard to tell from the depth 3 and depth 2 tests, from depth 1 search, it seems that generally the open_cells heuristic wins more games than my first heuristic - which returns a heuristic based on how closed off the other player is. 
+
+**Our heuristic vs. Your heuristic 2**
+-Depth 1: 50 Tests
+-(0, 4), (1, 1), (0, 1), (1, 3), (3, 2), (1, 2), (0, 2), (1, 1), (2, 2), (0, 3)
+
+-Depth 2: 3 Tests
+-(0, 0), (1, 1), (0, 0), (0, 0)
+
+-Depth 3: 1 Test
+-(0, 0)
+
+-Again it is hard to tell from the depth 3 and depth 2 tests, but from the depth 1 search, it seems that the open_cells heuristic wins more games than my second heuristic - which takes an average of my first heuristic and the open_cells heuristic
+
+
+**Your heuristic 1 vs. Your heuristic 2**
+-Depth 1: 50 Tests
+-(7, 2), (8, 5), (8, 3), (15, 4), (10, 1), (7, 0), (5, 1)
+
+-Depth 2: 3 Tests
+-(0, 1), (0, 0), (1, 0), (0, 0)
+
+-Depth 3: 1 Test
+-(0, 0)
+
+-It is hard again to tell from the depth 3 and 2 tests, but from depth 1, it is pretty clear that heuristic 2 is the better heuristic.
+
+
+In all I think open_cells may still be the best, but considering how blocked the other player is as the heuristic is also something to pay attention, which is why in my_eval_2, i tried averaging the two heuristics together, although open_cells still usually performed better.
+
