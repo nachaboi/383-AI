@@ -1,0 +1,12 @@
+---
+:id: 25461176
+:submitters:
+- :name: Nathan Ng
+  :email: nng@umass.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2019-11-24 19:59:59.404824000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2019-11-24 11:59:59.404824000 Z
+:status: processed
+:score: 90.0
